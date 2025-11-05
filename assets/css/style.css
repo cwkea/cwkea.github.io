@@ -11,3 +11,24 @@
     margin-left: 0;
   }
 }
+
+/* Top navigation bar */
+.top-nav {
+  margin-top: 10px;
+}
+
+.top-nav a {
+  display: inline-block;
+  margin-right: 20px;      /* space between links */
+  padding: 6px 12px;       /* clickable area */
+  text-decoration: none;    /* remove underline */
+  color: #0366d6;           /* GitHub-blue links */
+  font-weight: 500;
+  border-radius: 4px;       /* rounded corners on hover */
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.top-nav a:hover {
+  background-color: #0366d6;
+  color: #fff;
+}
