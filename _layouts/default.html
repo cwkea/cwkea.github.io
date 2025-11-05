@@ -5,24 +5,32 @@
   <title>{{ page.title }} - {{ site.title }}</title>
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 </head>
-<body style="margin:0; font-family:sans-serif;">
+<body>
 
+  <!-- Sidebar -->
   {% include sidebar.html %}
 
-  <main style="margin-left: 240px; padding: 20px;">
-    <header>
-      <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <nav class="top-nav">
-        {% for page in site.pages %}
-          {% if page.title %}
-            <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
-          {% endif %}
-        {% endfor %}
-      </nav>
-      <hr>
-    </header>
+  <main style="margin-left: 240px;">
     
-    {{ content }}
+    <!-- Cover Photo -->
+    <div class="cover-photo">
+      <img src="{{ '/assets/images/Jovian-planets-Jupiter.webp' | relative_url }}" alt="Cover Photo">
+    </div>
+
+    <!-- Navigation Bar -->
+    <nav class="top-nav">
+      {% for page in site.pages %}
+        {% if page.title %}
+          <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
+        {% endif %}
+      {% endfor %}
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+      {{ content }}
+    </div>
+
   </main>
 
 </body>
