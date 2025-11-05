@@ -12,16 +12,16 @@
   <main style="margin-left: 240px; padding: 20px;">
     <header>
       <h1><a href="{{ '/' | relative_url }}">{{ site.title }}</a></h1>
-      <nav>
+      <nav class="top-nav">
         {% for page in site.pages %}
           {% if page.title %}
-            <a href="{{ page.url | relative_url }}" style="margin-right: 10px;">{{ page.title }}</a>
+            <a href="{{ page.url | relative_url }}">{{ page.title }}</a>
           {% endif %}
         {% endfor %}
       </nav>
       <hr>
     </header>
-
+    
     {{ content }}
   </main>
 
