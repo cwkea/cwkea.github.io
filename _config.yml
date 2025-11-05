@@ -3,6 +3,5 @@ description: "Welcome to my GitHub Pages site!"
 theme: jekyll-theme-minimal
  
 header_pages:
-- index.md
 - about.md
 - projects.md
