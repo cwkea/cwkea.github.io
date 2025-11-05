@@ -1,5 +1,7 @@
 ---
-title: projects!
+layout: page
+title: Projects
+permalink: /projects/
 ---
 
-projects!
+Here are some of my projects.
