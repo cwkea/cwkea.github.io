@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  #sidebar {
+    width: 100%;
+    float: none;
+    height: auto;
+    border-right: none;
+    border-bottom: 1px solid #ddd;
+  }
+
+  main {
+    margin-left: 0;
+  }
+}
