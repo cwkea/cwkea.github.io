@@ -1,1 +1,7 @@
-Hello! I'm Caleb!
+---
+layout: page
+title: About
+permalink: /about/
+---
+
+This is my About page!
